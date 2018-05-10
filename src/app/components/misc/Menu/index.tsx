@@ -37,6 +37,10 @@ const Menu = props => (
         <div className="menu__divider"></div>
 
         <div className="menu__section menu__links menu__section--secondary">
+          <Link to="/account" className="menu__item">
+              <Icon className="menu__icon" glyph={GLYPHS.USERS} />
+              Account Management
+          </Link>
           <Link to="/faq" className="menu__item">
               <Icon className="menu__icon" glyph={GLYPHS.HELP} />
               FAQ

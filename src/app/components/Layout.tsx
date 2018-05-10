@@ -15,8 +15,6 @@ import "./layout.scss";
 import "./base.scss";
 
 
-
-
 const makeAsync = loader => Loadable({
     loader,
     loading: Loading
@@ -25,6 +23,7 @@ const makeAsync = loader => Loadable({
 const pageMap = {
     HOME,
     SEARCH,
+    ACCOUNT: makeAsync(() => import("./Pages/Account")),
     FAQ: makeAsync(() => import("./Pages/Faq")),
     LEADERBOARD: makeAsync(() => import("./Pages/Leaderboard")),
     CHANKABOARD: makeAsync(() => import("./Pages/Leaderboard/Chankaboard")),

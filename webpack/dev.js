@@ -18,13 +18,13 @@ module.exports = merge(base, {
         port: 9000,
         stats: "errors-only",
         disableHostCheck: true,
-        proxy: [
-            {
-                path: "/api",
-                target: "https://r6db.com",
-                changeOrigin: true,
-            },
-        ],
+        // proxy: [
+        //     {
+        //         path: "/api",
+        //         target: "https://r6db.com",
+        //         changeOrigin: true,
+        //     },
+        // ],
         historyApiFallback: true,
         watchOptions: {
             aggregateTimeout: 100,

@@ -27,6 +27,17 @@ export default {
                });
         },
     },
+    ACCOUNT: {
+        path: "/account",
+        thunk: () => {
+            analytics.pageView("Account");
+            setMeta({
+                title: `Account Management`,
+                description: `Account Management || R6DB`,
+            });
+        },
+
+    },
     ABOUT: {
         path: "/about",
         thunk: (dispatch, getState) => {

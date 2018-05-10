@@ -8,6 +8,7 @@ export default (state = false, action) => {
         case "LEADERBOARD":
         case "SEARCH":
         case "PROFILE":
+        case "ACCOUNT":
         case "PLAYER":
         case "FAQ":
         case "COMPARISON":

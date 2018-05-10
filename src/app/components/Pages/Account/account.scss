@@ -1,0 +1,17 @@
+@import "scss/styles";
+
+.app.ACCOUNT {
+    @include medium {
+        .page__headcontent {
+            padding-bottom: 100px;
+        }
+    }
+}
+
+.account {
+    @include small {
+        input {
+            width: 100%;
+        }
+    }
+}
